@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentun</title>
+  </head>
+  <body>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="manys">
+      <h2 id="clock">00:00:00</h2>
+      <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+          style="
+            background-color: transparent;
+            color: white;
+            border: none;
+            width: 360px;
+            height: 50px;
+            font-size: 40px;
+            font-size: 35px;
+            text-align: center;
+            padding: 0;
+            border-bottom: white 1px solid;
+            border-left: medium none;
+            border-right: medium none;
+            border-top: medium none;
+            margin-top: 30px;
+          "
+        />
+        <input class="hidden" type="submit" value="Log In" />
+      </form>
+      <h1 id="greeting" class="hidden"></h1>
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Today's to-do list"
+          required
+          style="
+            background-color: transparent;
+            color: white;
+            border: none;
+            border-bottom: white 1px solid;
+            border-left: medium none;
+            border-right: medium none;
+            border-top: medium none;
+            margin-top: 39px;
+            font-size: 16px;
+          "
+        />
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>
